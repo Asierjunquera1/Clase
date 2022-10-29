@@ -1,0 +1,8 @@
+      [paste.app_factory]
+      main = contact:main
+      [console_scripts]
+      initialize_contact_db = contact.scripts.initializedb:main
+      show_settings = contact.scripts.settings:main
+      contact = contact.scripts.contact:main
+      gcontact = contact.scripts.gtk:main
+      
