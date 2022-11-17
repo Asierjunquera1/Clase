@@ -29,7 +29,7 @@ def jugar_una_vez(numero, minimo, maximo):
 
 
 def pedir_entrada_del_numero_incognita(minimo, maximo):
-    return pedir_entrada_numero_delimitado("Introduzca el número a adivinar",
+    return pedir_entrada_numero_delimitado("Introduzca el número a adivinar:",
                                         minimo, maximo)
 
 def intentoss(nivell):
@@ -63,7 +63,7 @@ def jugar_una_partida(numero, minimo, maximo):
         # Se entra en un bucle infinito
         # que permite jugar varias veces
         if intento==intentosMax:
-            print("Has supèrado los intentos maximos")
+            print("Has superado los intentos maximos")
             break
         victoria, minimo, maximo = jugar_una_vez(numero, minimo, maximo)
         intento+=1
